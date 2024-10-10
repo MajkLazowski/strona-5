@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona z kolorowymi sekcjami</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+        #container {
+            display: flex;
+            height: 100%;
+        }
+        #left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        #top {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 150px;
+        }
+        #middle {
+            background-color: green;
+            flex: 1;
+        }
+        #right {
+            background-color: red;
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <section id="left">
+            <section id="top">
+                KOCHAM TECHNIKUM
+            </section>
+            <section id="middle"></section>
+        </section>
+        <section id="right"></section>
+    </section>
+</body>
+</html>
